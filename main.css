@@ -1,13 +1,10 @@
-body {
-  color: black;
-}
-
 .container {
   border: 1px solid #ccc;
   width: 400px;
   text-align: center;
   margin: auto;
 }
+
 .tab {
   overflow: hidden;
   border-bottom: 1px solid #ccc;
@@ -21,7 +18,7 @@ body {
   padding: 15px;
   font-size: 17px;
   justify-content: space-around;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   background-color: white;
 }
 
@@ -32,7 +29,6 @@ body {
 .tab button.active {
   border-bottom: 1px solid blue;
   font-weight: 700;
-
 }
 
 .tabcontent {
@@ -83,8 +79,7 @@ body {
   padding: 7px 0;
   display: flex;
   flex-direction: row-reverse;
-  font-family: 'Times New Roman', Times, serif;
-
+  font-family: "Times New Roman", Times, serif;
 }
 
 .timer-btn > button {
