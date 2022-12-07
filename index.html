@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom Assignment</title>
+
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'STOPWATCH')">
+          STOPWATCH
+        </button>
+        <button class="tablinks" onclick="openTab(event, 'TIMER')">
+          TIMER
+        </button>
+      </div>
+
+      <div id="STOPWATCH" class="tabcontent">
+        <div class="stopWatch-number">
+          <input disabled type="number" id="milSec" value="00" />
+          <input disabled type="number" id="Sec" value="00" />
+          <input disabled type="number" id="min" value="00" />
+        </div>
+      </div>
+
+      <div id="TIMER" class="tabcontent">
+        <div class="timer-number">
+          <input type="text" id="secTimer" min="1" placeholder="00s" />
+          <input type="text" id="minTimer" min="0" placeholder="00m" />
+          <input type="text" id="hourTimer" min="0" placeholder="00h" />
+        </div>
+      </div>
+
+      <footer class="timer-btn">
+        <button onclick="startTime()">بدء</button>
+        <button onclick="stopTime()">إيقاف</button>
+        <button id="reset" onclick="reset()">REST</button>
+      </footer>
+    </div>
+  </body>
+
+  <script src="./js/index.js" type="text/javascript"></script>
+</html>
